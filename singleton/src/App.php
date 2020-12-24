@@ -29,10 +29,10 @@ class App
 
   public static function getInstance(Array $config): App
   {
-    if (self::$instance === null)
-      self::$instance = new self($config);
+    if (static::$instance === null)
+      static::$instance = new static($config);
 
-    return self::$instance;
+    return static::$instance;
   }
 
   public function doSomething()
