@@ -12,17 +12,17 @@ class App
 
   protected Array $config;
 
-  protected function __construct(Array $config)
+  private function __construct(Array $config)
   {
     $this->config = $config;
   }
 
-  protected function __wakeup()
+  private function __wakeup()
   {
     throw new \Exception("Cannot unserialize a singleton.");
   }
 
-  protected function __clone()
+  private function __clone()
   {
     throw new \Exception("Cannot clone a singleton.");
   }
