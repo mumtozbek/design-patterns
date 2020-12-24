@@ -12,7 +12,8 @@ use App\Contracts\redisInterface;
 
 class Redis implements RedisInterface
 {
-  public function prepare() {
+  public function prepare()
+  {
     echo 'starting the Redis cache' . PHP_EOL;
   }
 }

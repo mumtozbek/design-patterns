@@ -1,4 +1,5 @@
 <?php
+// Composer autoload
 require 'vendor/autoload.php';
 
 // Boot a file cache

@@ -17,7 +17,8 @@ class RedisAdapter implements \App\Contracts\FileInterface
    */
   private redis $redis;
 
-  public function __construct(Redis $redis) {
+  public function __construct(Redis $redis)
+  {
     $this->redis = $redis;
   }
 

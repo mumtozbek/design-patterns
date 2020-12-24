@@ -12,7 +12,8 @@ use App\Contracts\FileInterface;
 
 class Cache
 {
-  public function boot(FileInterface $cache) {
+  public function boot(FileInterface $cache)
+  {
     $cache->boot();
   }
 }

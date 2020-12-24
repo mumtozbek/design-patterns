@@ -12,7 +12,8 @@ use App\Contracts\FileInterface;
 
 class File implements FileInterface
 {
-  public function boot() {
+  public function boot()
+  {
     echo 'starting the File cache' . PHP_EOL;
   }
 }
