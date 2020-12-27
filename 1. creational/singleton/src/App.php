@@ -1,16 +1,10 @@
-<?php
-/**
- * Created by PhpStorm
- * Author: Mumtoz Kodirov
- * Date: 15.12.2020
- * Time: 16:03
- */
+<?php declare(strict_types=1);
 
 class App
 {
   private static $instance;
 
-  protected Array $config;
+  private $config = [];
 
   private function __construct(Array $config)
   {
@@ -30,7 +24,9 @@ class App
   public static function getInstance(Array $config): App
   {
     if (static::$instance === null)
+    {
       static::$instance = new static($config);
+    }
 
     return static::$instance;
   }
